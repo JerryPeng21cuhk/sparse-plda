@@ -21,12 +21,13 @@ Usage example:
 ``` 
     
 After training, the plda model is stored in path: $plda_mdl, which can be used by kaldi's `ivector-plda-scoring`, e.g.,
+```
 ivector-plda-scoring --normalize-length=true \
   "ivector-copy-plda --smoothing=0.0 $plda_mdl - |" \
   "ark:ivector-normalize-length scp:$enroll_embeds_scp ark:- |" \
   "ark:ivector-normalize-length scp:$test_embeds_scp ark:- |" \
   "cat '$trials' | cut -d\  --fields=1,2 |" $scores
-  
+```
 
 If you are familiar with kaldi recipes, see demo.sh
   
