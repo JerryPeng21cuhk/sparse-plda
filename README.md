@@ -1,6 +1,6 @@
 # Implementation of Sparse PLDA and Bayes PLDA
 
-## Core files
+### Core files
 
 `plda.py`: python version of kaldi's two-covariance PLDA
 
@@ -11,7 +11,7 @@
 
 The i/o follows kaldi's style.
 
-Usage example:
+### Usage example:
 
 ```
   python sparse_plda.py \
@@ -29,5 +29,5 @@ ivector-plda-scoring --normalize-length=true \
   "cat '$trials' | cut -d\  --fields=1,2 |" $scores
 ```
 
-If you are familiar with kaldi recipes, see demo.sh
+If you are familiar with kaldi recipes, see `demo.sh`
   
