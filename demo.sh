@@ -39,7 +39,7 @@ export OMP_NUM_THREADS=8
 # for score evaluation
 evaluate() {
   scores=$1
-  local/prepare_for_eer.py $trials $scores | compute-eer - || exit 1;
+  prepare_for_eer.py $trials $scores | compute-eer - || exit 1;
 }
 
 
