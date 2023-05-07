@@ -3,8 +3,6 @@
 # 2022 jerrypeng1937@gmail.com
 
 # two-covariance PLDA
-# see my note: https://km.sankuai.com/page/1223471074
-# for the formuations
 
 
 from __future__ import print_function, division
